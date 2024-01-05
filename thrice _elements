@@ -1,0 +1,18 @@
+int s1=0;
+        for(int ele:arr)
+        {
+            s1+=ele;
+        }
+        Set<Integer> set=new HashSet<>();
+        for(int i=0;i<arr.length;i++)
+        {
+            set.add(arr[i]);
+        }
+        int sum=0;
+        for(int ele:set)
+        {
+            sum+=ele;
+        }
+        int ct=3*sum;
+        int diff=(ct-s1)/2;
+        return diff;
