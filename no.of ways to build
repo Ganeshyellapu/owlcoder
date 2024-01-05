@@ -1,0 +1,14 @@
+int TotalWays(int n)
+	{
+	    // Code here
+	    int n1=1;
+	    int n2=1;
+	    int n3;
+	    long k=1e9+7;
+	    for(int i=2;i<n+2;i++)
+	    {
+	        n3=(n1+n2)%k;
+	        n1=(n2)%k;
+	        n2=(n3)%k;
+	    }
+	    return (((n3%k)*(n3%k))%k);
