@@ -1,0 +1,27 @@
+int sb(int k)
+    {
+        int c=0;
+        while(k>0)
+        {
+            if(k&1)
+            {
+                c+=1;
+            }
+            k>>=1;
+        }
+        return c;
+    }
+	int is_bleak(int n)
+	{
+	    int k=log2(n);
+	    int f=n-(k+1);
+	    for(int i=f;i<n;i++)
+	    {
+	        //cout<<i<<" "<<k<<" ";
+	        if(i+sb(i)==n)
+	        {
+	            return 0;
+	        }
+	    }
+	    return 1;
+	}
