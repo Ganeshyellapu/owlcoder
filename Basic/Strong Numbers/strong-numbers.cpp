@@ -1,14 +1,11 @@
 //{ Driver Code Starts
-
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 // } Driver Code Ends
-class Solution
-{
-public:
-	public:
-	    int fact(int k)
+class Solution {
+  public:
+    int fact(int k)
 	    {
 	        int g=0;
 	        if(k==0){
@@ -20,7 +17,7 @@ public:
 	        return g;
 	        
 	    }
-		int is_StrongNumber(int n)
+		int isStrong(int n)
 		{
 		    int r=0;
 		    int s=0;
@@ -39,20 +36,18 @@ public:
 		}
 };
 
-
 //{ Driver Code Starts.
-int main(){
-    int T;
-    cin >> T;
-    while(T--)
-    {
-    	int n; 
-    	cin >> n;
-    	Solution ob;
-    	int ans = ob.is_StrongNumber(n);
-    	cout << ans <<"\n";
-    }
-	return 0;
-}
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int N;
+        
+        cin>>N;
 
+        Solution ob;
+        cout << ob.isStrong(N) << endl;
+    }
+    return 0;
+}
 // } Driver Code Ends
