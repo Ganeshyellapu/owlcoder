@@ -3,7 +3,7 @@ class Solution:
         c=0
         i=0
         while(i<len(s)):
-            if(s[i]=="O"):
+            if(s[i]=='O'):
                 i+=1
             else:
                 if(s[i:i+3].count('X')>0):
