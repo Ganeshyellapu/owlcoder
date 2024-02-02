@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct Node{
+	int data;
+	Node *next;
+	Node(int x){
+		data=x;
+		next=NULL;
+	}
+};
+Node *insertbegin(Node *head,int x){
+	Node *temp=new Node(x);
+	temp->next=head;
+	return temp;
+}
+void printlist(Node *head){
+	if(head==NULL){
+		return;
+	}
+	cout<<head->data<<" ";
+	printlist(head->next);
+}
+int main(){
+	Node *head=NULL;
+	head=insertbegin(head,30);
+	head=insertbegin(head,40);
+	printlist(head);
+}
