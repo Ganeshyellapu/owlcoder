@@ -9,11 +9,17 @@ struct Node{
     }
 };
 void printlist(Node *head){
-    Node *curr=head;
-    while(curr!=NULL){
-        cout<<curr->data<<" ";
-        curr=curr->next;
+    //Node *curr=head;
+    //while(curr!=NULL){
+    //    cout<<curr->data<<" ";
+    //    curr=curr->next;
+    //}
+//-------------------------------------------->>recursive method
+    if(head==NULL){
+    return;
     }
+    cout<<head->data<<" ";
+    printlist(head->next);
 }
 int main()
 {
