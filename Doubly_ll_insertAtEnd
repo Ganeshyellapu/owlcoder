@@ -40,6 +40,6 @@ int main(){
 	temp2->prev=temp1;
 	printlist(head);
 	cout<<"\n";
-	insertAtEnd(head,40);
+	head=insertAtEnd(head,40);
 	printlist(head);
 }
